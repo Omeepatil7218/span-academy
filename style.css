@@ -1,0 +1,283 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e3e6f0;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.navbar:hover {
+    background-color: #b0bce3;
+    border-bottom-color: #d9534f;
+}
+
+
+.nav-link {
+    color: #333 !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #d9534f !important;
+    text-decoration: none; 
+}
+
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+
+.navbar-brand img {
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(360deg);
+}
+.navbar-brand {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: color 0.3s, text-shadow 0.3s; 
+}
+
+
+.navbar-brand:hover {
+    color: #d9534f; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Video container styling */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+/* Video styling */
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effects */
+}
+
+/* Video hover effect */
+.video-container video:hover {
+    transform: scale(1.05); /* Scale up on hover for a zoom effect */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for depth */
+}
+
+
+/* Carousel styling */
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #d9534f;
+    transform: scale(1.2);
+}
+
+/* Card styling */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-family: 'Reddit Mono', monospace;
+    transition: color 0.3s;
+}
+
+.card-title:hover {
+    color: #d9534f;
+}
+
+/* About Us section */
+.container .text-danger {
+    color: #d9534f !important;
+}
+
+/* Testimonial styling */
+.testimonial-card {
+    border-left: 4px solid #d9534f;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+    background-color: #f8f9fa;
+}
+/* Principal's Message */
+.principal-message {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.principal-message:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-10px);
+    color: #d9534f; 
+}
+
+.shake-hands {
+    width: 300px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    position: relative;
+  }
+  
+  .hand {
+    width: 150px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    background-color: #f4c542; /* Adjust the color as needed */
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 50px; /* Adjust the border radius as needed */
+    border-top-right-radius: 50px; /* Adjust the border radius as needed */
+    transform-origin: bottom center;
+    animation: shake 1s infinite alternate;
+  }
+  
+  .left-hand {
+    left: 50%;
+    transform: translateX(-180px) rotate(-15deg); /* Adjust the position and rotation as needed */
+  }
+  
+  .right-hand {
+    right: 50%;
+    transform: translateX(180px) rotate(15deg); /* Adjust the position and rotation as needed */
+  }
+  
+  
+  @keyframes shake {
+    from {
+      transform: rotate(-15deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
+  
+  
+/* Contact form */
+.form-control {
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #d9534f;
+    box-shadow: 0 0 10px rgba(217, 83, 79, 0.5);
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add stylish elements */
+.form-control::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.form-control:hover {
+    background-color: #e9ecef;
+}
+
+.form-control:active {
+    border-color: #d9534f;
+    background-color: #fff;
+}
+
+/* Styling for disabled fields */
+.form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 0.6;
+}
+
+/* Add icons inside input fields */
+.form-group {
+    position: relative;
+}
+
+.form-group .form-control {
+    padding-left: 3rem;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #d9534f;
+    font-size: 1.2rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa; 
+    color: #333; 
+    padding: 1.5rem 0; 
+    text-align: center;
+    border-top: 2px solid #e3e6f0; 
+}
+
+footer .container {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 0; 
+    font-size: 1rem; 
+}
+
+footer a {
+    color: #d9534f; 
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+footer a:hover {
+    color: #bd2130; 
+    text-decoration: underline; 
+}
